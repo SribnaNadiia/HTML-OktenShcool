@@ -1,0 +1,86 @@
+<!doctype html>   <!--блочні елементи-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> будування
+    <title>Lesson1</title> назва
+    <!--<link rel="stylesheet" href="style.css"> -->  <!-- для зовнішніх стилів link + tab href ="файл назва" rel= тип підключаємого файлк-->
+
+   <style>
+       p{                                   /*для всих (Р) але не має пріоритет ВНУТРІЩНІЙ */
+           color: darkslategrey;
+       }
+       p{
+           background-color: lightpink;
+           width: 50%; /*ширина*/
+           height: 30px;  /*висота в px*/
+          /* margin-left: 50px;
+           margin-top: 150px;
+           margin-bottom: 70px;      !*або margin: n* n* n* n* за годинниковою стрілкою*!
+           margin-right: 190px;*/
+            margin: 10px 5px 20px 1px;   /*або написати 2 параметра і вони відзеркаляться*/
+            padding: 25px 30px 30px 30px;   /*внутрішній відступ*/
+           /*display: inline;*/  /*робить елемент рядковим*/
+       }
+       span{
+           color: mediumseagreen;
+           /*display: block; */     /*span займе все доступне місце*/
+           width: 200px;    /*не застосується якщо немає 26*/
+           height: 100px;
+       }
+
+
+
+   </style>
+
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>       <!--<p>lorem</p>-->
+    <p>Lorem ipsum dolor sit amet.</p>  <!--<p>lorem5</p>-->
+    <p>hello</p>                        <!--p*4>{hello}-->
+    <p>hello</p>
+    <h1>Lorem</h1>      <!--заголвок(h1>h6)-->
+    <h3>Lorem</h3>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Adipisci aliquam architecto consectetur ea earum eius, enim exercitationem expedita facere molestiae natus necessitatibus nobis numquam perspiciatis quasi quo saepe soluta velit.</h6>
+<!--<br> відступ-->
+    <p>Lorem ipsum <b>dolor sit amet</b>, consectetur adipisicing.</p>      <!--<b>жирний шрифт</b>-->
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong>.</p>  <!--strong жирний текст-->
+    <p>Lorem <i><b>ipsum dolor sit amet</b></i>, consectetur adipisicing.</p>   <!--<i>курсивий</i>-->
+    <p>Lorem <s>ipsum dolor sit amet</s>, consectetur adipisicing.</p>       <!--<s>перекреслює</s>-->
+    <p>Lorem <sup>ipsum dolor sit amet</sup>, consectetur adipisicing.</p>      <!--<sup>переносить на гору</sup>-->
+    <p>Lorem ipsum dolor sit amet, <sub>consectetur adipisicing</sub>.</p>      <!--<sub>переносить на низ</sub>-->
+
+    <code>code void loop()</code>                                <!--<code>моноширний щрифт</code>-->
+
+    <hr> <!--лінія як в вікіпедіі-->
+
+    <pre>
+        Lorem <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZOzBag_j88ddL64m4-6m5l4L6vjKUXLavyRFlFr3jzrYl3g/viewform">ipsum</a> dolor sit amet.  <!--<a>додати ссилку + href="ссилка"</a>-->
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.            <!--<pre>зберегти структуру</pre>-->
+    </pre>
+
+    <p style="color: darkblue; font-size: 30px">Lorem ipsum dolor sit amet.</p> <!--<p style="колір.розмір і тд" вбудована має пріоритет-->
+
+   <!-- h1{first heading}+h2{second heading}+p*5>lorem20  + TAB  (ФОРМУЛА)-->
+
+    <h1>first heading</h1>
+    <h2>second heading</h2>
+    <p style="margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequatur dolor dolorem eaque, est eum
+        expedita nam necessitatibus sit soluta!</p>
+    <p style="margin-top: 0">Accusantium deleniti deserunt dolores facilis in inventore magni maiores modi, nostrum suscipit. Accusamus libero
+        magni maxime neque officia quia, tempora.</p>
+    <p>A aperiam at ea et eum hic inventore magnam pariatur praesentium, quae qui quos repellat repudiandae sint
+        temporibus veniam voluptatibus?</p>
+    <p><span>Aliquid asperiores beatae</span> consequatur doloremque dolores fuga quod. Aut cupiditate earum error facere,            <!--span просто обгортка для задання стилю p24-->
+        mollitia omnis quis soluta voluptate voluptatum!</p>
+    <p>Consequuntur cum cupiditate earum enim exercitationem fugiat id itaque magnam magni, maxime minima modi odio
+        omnis placeat rem repellendus totam!</p>
+
+
+
+</body>
+</html>
+<!--
+F12 для перевірки сайту-->
