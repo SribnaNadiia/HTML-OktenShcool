@@ -22,7 +22,7 @@
         height: 200px;
         background-color: saddlebrown;
     }
-    .header{           !*верхня частина сайту*!   (51-57)
+    .header{           !*верхня частина сайту*!   (133-139)
         width: 100%;
         height: 200px;
         background-color: slateblue;
@@ -30,13 +30,13 @@
         padding: 20px;
     }*/
 
-/*    .main{                 !*(51-57)*!
+/*    .main{                 !*(133-139)*!
         width: 100%;
         height: 400px;
         background-color: indigo;
     }
 
-    .footer{                  !*(51-57)*!
+    .footer{                  !*(133-139)*!
         width: 100%;
         height: 200px;
         background-color: cornflowerblue;
@@ -48,7 +48,7 @@
     }*/
 /*    #box{                                   !*id# вкрай унікальний елемент*!
         width: 50px;
-        height: 75px;                           (51-57)
+        height: 75px;                           (133-139)
         background-color: fuchsia;
     }*/
 
@@ -56,18 +56,21 @@
             width: 200px;
             height: 200px;
             background-color: gold;
+            transition: 50ms;
         }
 
         .blue{
             width: 200px;
             height: 200px;
             background-color: blue;
+            transition: 3s;
         }
 
         .green{
             width: 200px;
             height: 200px;
             background-color: green;
+            transition: 2s;
         }
 
         .flex{
@@ -88,7 +91,7 @@
             justify-content: center;     золота трійка
             align-items: center;*/
 
-        /*    flex-direction: row-reverse;*/      /*в якому порядку стоять блоки: row в рядок + reverse в зворотньому порядку*/
+            flex-direction: row-reverse;      /*в якому порядку стоять блоки: row в рядок + reverse в зворотньому порядку*/
             /*flex-direction: column;*/    /*в стовпчик  + reverse в зворотньому порядку
 */
             flex-wrap: wrap;                /*якщо елементи не вміщаються в контейнер то буде здійсненний автоматичний перенос*/
@@ -98,6 +101,31 @@
             align-self: flex-end;    !*звернутися до одного елемента і вбудувати*!
         }*/
 
+        .green:hover{                       /*.обьєкт:змінить свою властивість при наведенні ПІДКЛАСС*/
+            background-color: chartreuse;       /*змінить колір*/
+            border-radius: 50%;               /*заокруглить кути*/
+            transition: 3s;             /*час зміни форми + додати до обьекту для плавного відновлення*/
+
+        }
+        .blue:hover{
+            transform: rotate(45deg);   /*розвернути на 180 градусів*/
+            transition: 3s;
+        }
+
+        .gold:hover{
+            transform: scale(1.5);  /*збільшення, стандарт 1,   1< 1,5 , 2 і тд   0,1 , 0,5 >1*/
+            transition: 100ms;
+        }
+
+        .pink{
+            color: grey;
+            opacity: 0;        /*прозорість 0*/
+        }
+        .pink:hover{
+            color: darkslategrey;
+            transition: 3s;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +142,9 @@
     <div class="gold"> </div>                  <!-- блоки стоять колоною за замовчуванням займають усю доступну ширину екрану display: block-->
     <div class="blue align-self" > </div>
     <div class="green"> </div>
+</div>
 
+    <p class="pink">Lorem ipsum dolor sit amet, consectetur.</p>
 
 </body>
 </html>
