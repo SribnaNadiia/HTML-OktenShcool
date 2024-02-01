@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">                 <!--link з сайту вставляти ДО <STYLE>-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital@1&family=Workbench&display=swap" rel="stylesheet">
+    <style>
+    /*    @import url('https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital@1&family=Workbench&display=swap'); *//*@імпорт з сайту*/
+        .honk{
+            font-family: 'Honk', system-ui;
+            font-weight: 400;
+        }
+                                   /* можна винести в CSS файл, та підключити через <link rell="stylesheet" href="file.css">*/
+        .josef {
+            font-family: 'Josefin Sans', sans-serif;   /*з сайту*/
+            font-weight: 400;
+        }
+
+        .workbench {
+            font-family: 'Workbench', sans-serif;
+            font-weight: 400;
+        }
+
+        p{
+            color: cornflowerblue;
+        }
+        .redText{                /*       !*.класс якому можна присвоіти значення (колір та інші*!) та безмежно використовувати*/
+            color: red;
+        }
+        #gold{                           /* #ідентифікатор (id) можона додати тільки один , обмежений у використанні*/
+            color: gold;                 /*має перевагу над классом та "р" але не має перевагу над вбудованою стилізацією */
+        }
+
+/*        p{
+            font-family: ;              !* шрифти*!
+        }*/
+
+
+/*        div{                                блок
+            width: 200px;
+            height: 200px;
+            background-color: darkblue;
+        }*/
+
+        .header{
+            width: 100%;
+            height: 200px;
+            background-color: slateblue;
+        }
+
+        .main{
+            width: 100%;
+            height: 400px;
+            background-color: saddlebrown;
+        }
+
+        .footer{
+            width: 100%;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="red">
+        <div></div>
+        </div>
+    </div>  <!--блок-->
+    <div class="main"> </div>
+    <div class="footer"> </div>
+
+<!--<p class="redText">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p id="gold">&lt;!&ndash; class="redText" не подіє,  style="color: darkblue" подіє бо має пріоритет&ndash;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p class="redText">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p class="honk">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p class="josef">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p class="workbench">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>-->
+
+
+
+
+</body>
+</html>
