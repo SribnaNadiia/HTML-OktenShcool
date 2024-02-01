@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block-Div</title>
+    <style>
+/*        body{
+            margin: 0;
+        }*/
+
+/*    div{
+        !*display: inline-block;*!               !*блоки стануть в рядочок 1 варіант*!
+        margin: 30px;                           !*блоки розсунуться між собою на зазначену кількість px*!
+        !*float: left; *!                           !*властивість блоку приліпитися лівим боком до попереднього*!
+
+
+    }*/
+
+
+/*    div{                !**<!-- блок-- >**!
+        width: 200px;          !*базові параметри щоб побачити блок*!
+        height: 200px;
+        background-color: saddlebrown;
+    }
+    .header{           !*верхня частина сайту*!   (51-57)
+        width: 100%;
+        height: 200px;
+        background-color: slateblue;
+        margin: 20px;
+        padding: 20px;
+    }*/
+
+/*    .main{                 !*(51-57)*!
+        width: 100%;
+        height: 400px;
+        background-color: indigo;
+    }
+
+    .footer{                  !*(51-57)*!
+        width: 100%;
+        height: 200px;
+        background-color: cornflowerblue;
+    }
+    .red{
+        width: 100px;
+        height: 100px;
+        background-color: lightseagreen;
+    }*/
+/*    #box{                                   !*id# вкрай унікальний елемент*!
+        width: 50px;
+        height: 75px;                           (51-57)
+        background-color: fuchsia;
+    }*/
+
+        .gold{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .green{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .flex{
+            width: 100%;
+            height: 800px;
+            background-color: antiquewhite;
+            display: flex;                          /*допомагае гнучко вмістити в себе інші*/
+        /*    justify-content: center;   */               /*вирівнюе елементи по горизонталі*/ /*flex-end по горзонталі в кінець*/ /*flex-start  в початок*/
+
+            justify-content: space-around;             /*вирівнюе на однаковій вілдстані один від одного та від краю*/
+            /*justify-content: space-between; */    /*перший та останній прилипнуть до країв, а останні розмістяться між ними*/
+            /*justify-content: space-evenly;  */         /*абсолютно рівні відступи від країв та між обьектами*/
+
+            align-items: center; /*вирівнюе по висоті: center*/  /*flex-end у низ;  flex-start на горі*/
+
+
+/*            display: flex;
+            justify-content: center;     золота трійка
+            align-items: center;*/
+
+        /*    flex-direction: row-reverse;*/      /*в якому порядку стоять блоки: row в рядок + reverse в зворотньому порядку*/
+            /*flex-direction: column;*/    /*в стовпчик  + reverse в зворотньому порядку
+*/
+            flex-wrap: wrap;                /*якщо елементи не вміщаються в контейнер то буде здійсненний автоматичний перенос*/
+        }
+
+/*        .align-self{
+            align-self: flex-end;    !*звернутися до одного елемента і вбудувати*!
+        }*/
+
+    </style>
+</head>
+<body>
+
+<!--    <div class="header">           додати інфо в div, <div + інфо> </div залишається незмінна>&ndash;&gt;
+        <div class="red">
+            <div id="box"> </div>
+        </div>
+    </div>                 блок
+    <div class="main"> </div>
+    <div class="footer"> </div>-->
+
+<div class="flex">                <!--гнучкий контейнер для пропорційного розміщення інших у собі-->
+    <div class="gold"> </div>                  <!-- блоки стоять колоною за замовчуванням займають усю доступну ширину екрану display: block-->
+    <div class="blue align-self" > </div>
+    <div class="green"> </div>
+
+
+</body>
+</html>
