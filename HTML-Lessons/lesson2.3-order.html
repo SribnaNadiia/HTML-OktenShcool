@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+
+        .gold{             /*блок стоїть останнім*/
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            order: 0;             /*змінмв положення і став першим тому що всі інші мають за замовчуванням індекс 0*/
+            transition: 2s;
+        }
+
+        .gold:hover{                        /*застосувати дві властивость просто через пробіл*/
+            transform:  rotate(45deg) scale(1.5);       /*(deg) градуси*/
+            transition: 2s;
+        }
+
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: darkslateblue;
+            order: 2;
+        }
+
+        .green{
+            width: 200px;
+            height: 200px;
+            background-color: darkgreen;
+            order: 1;
+        }
+
+        .flex{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="green"> <span>1</span> </div>                   <!--кожен має індекс 0 який ми можемо міняти-->
+    <div class="blue"> <span>2</span> </div>
+    <div class="gold"> <span>3</span> </div>
+</div>
+
+</body>
+</html>
