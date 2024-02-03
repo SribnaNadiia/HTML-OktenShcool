@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Geme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://images.unsplash.com/photo-1506362802973-bd1717de901c?q=80&w=1737&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        .font{
+            font-family: 'DM Serif D isplay', serif;
+            color: #a7a9b2;
+            font-size: 5vw;
+            text-shadow: 7px 7px 15px #800909;;
+
+
+        }
+
+        .fontblack{
+            font-family: 'DM Serif Display', serif;
+            color: #721414;
+            font-size: 5vw;
+            text-shadow: 7px 7px 15px #3d3030;;
+        }
+
+        .flex{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: inherit;
+        }
+
+        .flextwo{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: inherit;
+            margin-bottom: 20vh;
+        }
+
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1vw 10vw;
+        }
+
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 4vh;
+            padding: 1vw 10vw;
+        }
+
+        .cardblacktop{
+            font-family: 'DM Serif Display', serif;
+            color: #070606;
+            font-size: 35px;
+            align-items: flex-start;
+            justify-content: flex-end;
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .cardblackend{
+            font-family: 'DM Serif Display', serif;
+            color: #070606;
+            font-size: 35px;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+
+        .cardredtop{
+            font-family: 'DM Serif Display', serif;
+            color: #5d0f0f;
+            font-size: 35px;
+            align-items: flex-start;
+            justify-content: flex-end;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 10px;
+        }
+
+        .cardredend{
+            font-family: 'DM Serif Display', serif;
+            color: #5d0f0f;
+            font-size: 35px;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+
+        .card {
+            display: flex;
+            width: 130px;
+            height: 200px;
+            background-color: rgba(175, 130, 112, 0.45);
+            border-radius: 5%;
+            transition: 1.5s;
+            border: 2px solid rgba(114, 73, 43, 0.64);
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+        .card:hover{
+            transform: scale(1.1);
+            transition: 2s;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <span class="font">Player 1:</span>
+</div>
+
+    <div class="flex">
+        <div class="card">
+            <div class="cardblacktop"> <span>&clubs; 2</span> </div>
+            <div class="cardblackend"> <span> 2 &clubs;</span> </div>
+        </div>
+
+        <div class="card">
+            <div class="cardredtop"> <span> &hearts; 9 </span> </div>
+            <div class="cardredend"> <span> 9 &hearts; </span> </div>
+        </div>
+
+        <div class="card">
+            <div class="cardredtop"> <span> &hearts; 6 </span> </div>
+            <div class="cardredend"> <span> 6 &hearts; </span> </div>
+        </div>
+
+        <div class="card">
+            <div class="cardredtop"> <span> &diams; A </span> </div>
+            <div class="cardredend"> <span> A &diams; </span> </div>
+        </div>
+
+        <div class="card">
+            <div class="cardblacktop"> <span>&spades; Q </span> </div>
+            <div class="cardblackend"> <span> Q &spades; </span> </div>
+        </div>
+
+        <div class="card">
+            <div class="cardblacktop"> <span>&clubs; J </span> </div>
+            <div class="cardblackend"> <span> J &clubs;</span> </div>
+        </div>
+
+    </div>
+
+<div class="footer">
+    <span class="fontblack">Player 2:</span>
+</div>
+
+<div class="flextwo">
+    <div class="card">
+        <div class="cardredtop"> <span> &hearts; 3 </span> </div>
+        <div class="cardredend"> <span> 3 &hearts; </span> </div>
+    </div>
+
+    <div class="card">
+        <div class="cardblacktop"> <span> &spades; A </span> </div>
+        <div class="cardblackend"> <span> A &spades; </span> </div>
+    </div>
+
+    <div class="card">
+        <div class="cardblacktop"> <span> &clubs; 10 </span> </div>
+        <div class="cardblackend"> <span> 10 &clubs; </span> </div>
+    </div>
+
+    <div class="card">
+        <div class="cardredtop"> <span> &diams; K </span> </div>
+        <div class="cardredend"> <span> K &diams; </span> </div>
+    </div>
+
+    <div class="card">
+        <div class="cardblacktop"> <span> &spades; 8 </span> </div>
+        <div class="cardblackend"> <span> 8 &spades; </span> </div>
+    </div>
+
+    <div class="card">
+        <div class="cardredtop"> <span> &hearts; 3  </span> </div>
+        <div class="cardredend"> <span> 3 &hearts;</span> </div>
+    </div>
+
+</div>
+
+</body>
+</html>
