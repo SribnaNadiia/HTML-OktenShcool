@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
   <style>
 
       .header{
@@ -22,27 +26,187 @@
 
       .font{
         font-family: 'Protest Revolution', sans-serif;
-        color: #0c031f;
+        color: #070606;
         font-size: 100px;
+        text-align: center;
+      }
+
+      .fonts{
+        font-family: 'Playfair Display', serif;
+        color: #e2e2e3;
+        font-size: 20px;
         text-align: center;
       }
 
       .flex{
         width: 100%;
         display: flex;
-      /*  background-color: #3d3030;*/
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         padding: 0 20px;
       }
 
-      .color{
-        width: 200px;
-        height: 200px;
-        background-color: #f6d2c2;
+      .black{
+        width: 180px;
+        height: 180px;
+        background-color: black;
         margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 2px;
+        animation: slideIn 2s infinite;
       }
+
+      @keyframes slideIn {
+        0% { transform: translateX(-50%); }
+        50% { transform: translateX(0)}
+        100% { transform: translateX(50%); }
+
+      }
+
+      .red{
+        width: 180px;
+        height: 180px;
+        background-color: red;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        animation: rotate 3s infinite;
+      }
+      @keyframes rotate {
+        0% { transform: rotate(0deg);  }
+        100% {transform: rotate(360deg);  }
+
+      }
+
+      .green{
+        width: 180px;
+        height: 180px;
+        background-color: green;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+      }
+
+      .blue {
+        width: 180px;
+        height: 180px;
+        background-color: blue;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% {transform: scale(1.2); }
+      }
+
+      .deeppink{
+        width: 180px;
+        height: 180px;
+        background-color: deeppink;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+      }
+
+      .white{
+        width: 180px;
+        height: 180px;
+        background-color: white;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        font-family: 'Playfair Display', serif;
+        font-color: black;
+        font-size: 20px;
+      }
+
+      .yellow{
+        width: 180px;
+        height: 180px;
+        background-color: yellow;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        font-family: 'Playfair Display', serif;
+        font-color: black;
+        font-size: 20px;
+      }
+
+      .purple{
+        width: 180px;
+        height: 180px;
+        background-color: purple;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        animation: fadeIn 2s infinite;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        50% { opacity: 5; }
+        100% { opacity: 0;}
+
+      }
+
+      .maroon{
+        width: 180px;
+        height: 180px;
+        background-color: maroon;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+      }
+
+      .olive{
+        width: 180px;
+        height: 180px;
+        background-color: olive;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #070606 solid 2px;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0% { transform: translateY(0); }
+        40% { transform: translateY(-20px)}
+        60% { transform: translateY(-10px)}
+      }
+
 
 
 
@@ -55,19 +219,50 @@
   </div>
 
 <div class="flex">
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
+  <div class="black fonts">
+    <span>Black</span>
+    <span>#000000</span>
+  </div>
+  <div class="red fonts">
+    <span>Red</span>
+    <span>#FF0000FF</span>
+  </div>
+  <div class="color green fonts">
+    <span>Green</span>
+  <span>#008000FF</span>
+  </div>
+  <div class="color blue fonts">
+    <span>Blue</span>
+  <span>#0000FFFF</span>
+  </div>
+
+  <div class="color deeppink fonts">
+    <span>Deep Pink</span>
+    <span>#FF1493FF</span>
+  </div>
 </div>
 
 <div class="flex">
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
-  <div class="color"> </div>
+  <div class="color white ">
+    <span>White</span>
+    <span># FFFFFFFF</span>
+  </div>
+  <div class="color yellow">
+    <span>Yellow</span>
+    <span>#FFFF00FF</span>
+  </div>
+  <div class="color purple fonts">
+    <span>Purple</span>
+    <span>#800080FF</span>
+  </div>
+  <div class="color maroon fonts">
+    <span>Maroon</span>
+    <span>#800000FF</span>
+  </div>
+  <div class="color olive fonts">
+    <span>Olive</span>
+    <span>#808000FF</span>
+  </div>
 </div>
 
 
