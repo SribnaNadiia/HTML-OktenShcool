@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>dimensions</title>
+    <style>
+/*        div{
+            width: 5cm;            !*сантиметри та міліметри (mm) підходять для подальшого друку*!
+            height: 5cm;
+        }
+
+        div{
+            width: 5in;         дюйми(1 in = 96px )    пункти (1 pt = 4/3px)     піки
+            height: 5in;
+        }*/
+
+
+
+    .main{
+        width: 100vw;       /*батьківському блоку  ширина може бути у відсотках, а висота ні*/
+        height: 100vw;      /*вьюпорти опираються на ширину браузера */
+        background-color: #29299b;                                 /* робимо квадрат    опираючи висоту на ширину*/
+    }
+
+
+/*    .green{
+        width: 50%;   !*відсотки мають опиратись на батьківський блок *!
+        height: 50%;
+        background-color: green;
+    }*/
+
+    .blue{
+        width: 50vmax;          створиться квадрат по найбільшій стороні
+        height: 50vmax;
+    }
+
+
+
+
+    </style>
+
 </head>
+
 <body>
+    <div class="main">
+        <div class="blue"> </div>
+
+    </div>
 
 </body>
 </html>
