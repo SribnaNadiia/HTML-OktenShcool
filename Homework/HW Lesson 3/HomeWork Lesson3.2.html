@@ -15,9 +15,8 @@
         section{
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            justify-content: start;
+            flex-direction: column;
         }
 
         #fruit{
@@ -40,19 +39,66 @@
             align-items: flex-end;
         }
 
-        #fruit p{
-            text-align: center;
+        .header{
+            height: 20vh;
+/*            background-color: #29299b;*/
+            display: flex;
+            justify-content: center;
+            align-items: end;
+/*            padding-top: 30px;
+            font-size: 50px;*/
+        }
+
+        .textspan{
+        /*    padding-top: 40px;*/
+            padding-bottom: 15px;
             font-size: 50px;
         }
 
+        .textp{
+            padding: 15px 20px;
+            font-size: 20px;
+        }
+
+        .main{
+            display: flex;
+            height: 60vh;
+/*            background-color: #29299b;*/
+            text-align: center;
+            line-height: 1.7;
+
+
+        }
+
+        .footer{
+            height: 20vh;
+        /*    background-color: #f5edea;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
 
     </style>
 </head>
 <body>
 <section id="fruit">
-    <p>Fruit</p>
-    <a href="#vegetable"> <img src="https://cdn-icons-png.flaticon.com/512/44/44684.png" alt="vector"></a>
+    <div class="header">
+        <span class="textspan"><b>Fruit</b></span>
+    </div>
+
+    <div class="main"> <p class="textp">Simple fruits are the result of the ripening-to-fruit of a simple or compound ovary in a single flower with a single pistil. In contrast, a single flower with numerous pistils typically produces an aggregate fruit; and the merging of several flowers, or a 'multiple' of flowers, results in a 'multiple' fruit.[16] A simple fruit is further classified as either dry or fleshy.
+
+        To distribute their seeds, dry fruits may split open and discharge their seeds to the winds, which is called dehiscence.[17] Or the distribution process may rely upon the decay and degradation of the fruit to expose the seeds; or it may rely upon the eating of fruit and excreting of seeds by frugivores – both are called indehiscence. Fleshy fruits do not split open, but they also are indehiscent and they may also rely on frugivores for distribution of their seeds. Typically, the entire outer layer of the ovary wall ripens into a potentially edible pericarp.</p>
+    </div>
+
+    <div class="footer">
+        <a href="#vegetable"> <img src="https://cdn-icons-png.flaticon.com/512/44/44684.png" alt="vector"></a>
+    </div>
+
+
+
+
 
 </section>
 
