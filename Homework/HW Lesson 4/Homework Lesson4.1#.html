@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'KoHo', sans-serif;
+        }
+
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #back{
+            display: flex;
+            background-image: url("bg.png");
+            background-size: cover;
+            flex-wrap: wrap;
+/*            width: 100vw;
+            height: 100vh;*/
+        }
+
+        .mainone{
+            height: 40vh;
+            width: 35vw;
+            background-image: url("image 3.jpg");
+        }
+
+        .maintwo{
+            height: 40vh;
+            width: 35vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background: #FAF9F7;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+        .background{
+            display: flex;
+            background-image: url("bg-section-video.png");
+            background-size: cover;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+            button{
+                width: 25vw;
+                height: 6vh;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                flex-shrink: 0;
+                border-radius: 5px;
+                border: 1px solid rgba(156, 152, 152, 0.10);
+                background: rgba(217, 217, 217, 0.60);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin: 0;
+            }
+
+            h2{
+                color: #000;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-size: 45px;
+                margin: 0;
+                margin-bottom: 4vh;
+            }
+
+            span{
+                font-size: 25px;
+                margin-bottom: 4vh;
+            }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <section id="back">
+
+        <div class="mainone"></div>
+        <div class="maintwo">
+            <h2>Lorem ipsum</h2>
+        <span>Lorem ipsum dolor sit amet</span>
+            <button onclick="">Button</button>
+        </div>
+    </section>
+
+    <section class="background">
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/Z_QbY2XUAi8?si=-hnEsNdd7-ziLqTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <span>Abstract nature photography: pushing myself creatively.  In this video, I go into the field to try to create semi-abstract or abstract nature photos, limiting myself to only one prime lens.</span>
+
+    </section>
+
+
+</body>
+</html>
