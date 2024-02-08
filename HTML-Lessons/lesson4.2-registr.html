@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registr</title>
+
+  <style>
+    label{
+      display: block;
+      margin: 10px 0;
+    }
+    sup{
+      color: red;
+    }
+
+    textarea{
+      height: 80px;
+      width: 200px;
+      resize: none;   /*не може змінювати розмір*/
+    }
+
+    input[type="text"],         /*стилізуемо конкретний тип або декілька*/
+    input[type="password"]
+    {
+      width: 200px;
+      height: 50px;
+      border-radius: 2px;
+      border: #659411 solid;
+      background-color: darkolivegreen;
+      text-overflow: ellipsis;   /*при переповненні контейнеру закінчує точками*/
+    }
+
+    input[type="text"]::placeholder{      /*псевдо елемент*/
+      color: #29299b;     /*колір тексту прикладу в полі*/
+    }
+
+    input[type="text"]:focus{      /* при кліці фон міняе колір*/   /*Псевдо класси focus(наведення)   hover*/
+      background-color: #800909;
+      /*outline: 2px solid blueviolet; */ /*друга рамка поверх бордера*/
+      outline: none;
+      border: 2px solid #cb0cbb;
+    }
+
+    input[type="checkbox"]{    /*міняемо галочку на іншій елемент*/
+      appearance: none;          /* Відключаемо її властивість*/
+      width: 16px;
+      height: 16px;
+      border: 1px solid blueviolet;
+      border-radius: 4px;
+      margin: -3px;
+    }
+
+    input[type="checkbox"]:checked{   /*check властивість при натисканні*/
+      background-image: url("https://img.icons8.com/ios-filled/50/dog--v1.png");
+      background-size: cover;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+<form>                         <!-- поле-->
+  <label for="name">Введіть своє ім'я</label>      <!--лінійний елемент який більш доречний для назви -->
+    <input type="text" name="username" id="name" placeholder="Name" required><sup>*</sup>    <!--B placeholder можемо додати поле для вводу тексту, кнопку і тд; вибрати коректну назву; додати приклад в середину-->
+  <!--label треба привязувати до input через  id або огорнути в тег label-->      <!--  required робить поле обовьязковим --> <!--input робить  поле клікабельним-->
+
+
+  <!----------------------Password---------------------------->
+
+
+  <label for="password">Введіть свій пароль</label>
+  <input type="password" name="password" id="password" placeholder="qwerty120" required>  <!--не буде видно символів-->
+
+  <!----------------------------------old------------------------------------>
+
+  <label for="age">Введіть свій вік</label>
+  <input type="number" name="age" id="age" min="18" max="99" >
+
+  <!---------------radio-Button------------------>
+
+  <label>Стать</label>
+  <label> <input type="radio" name="gender" value="male">Чоловіча</label>     <!--name обьєднюе до одніеї группи що дозволяе вибрати один варіант-->
+  <label> <input type="radio" name="gender" value="femel">Жіноча</label>    <!--value допомагае створити ключ і визначити вибір-->
+
+  <!---------------------checkBox--------------------->
+
+  <label>
+    <input type="checkbox" name="news"> Підписатись на новини       <!--дозволяе поставити галочку-->
+  </label>
+<!-------------------Список--------------------->
+  <select>
+      <optgroup label="Група 1">
+        <option>Варіант 1</option>
+        <option>Варіант 2</option>
+        <option>Варіант 3</option>
+      </optgroup>
+
+    <optgroup label="Група 1">
+      <option>Варіант 1</option>
+      <option>Варіант 2</option>
+      <option>Варіант 3</option>
+    </optgroup>
+  </select>
+
+  <!---------------------Коментарі------------------------>
+  <label for="text">Введіть свій коментар</label>      <!--можна застелізувати -->
+  <textarea id="text"></textarea>
+
+  <!---------------------------Кнопки------------------------>
+  <br>
+  <input type="submit" value="Тиць">    <!--тип - щось відправляе-->
+  <input type="submit">
+
+ <!-- <div onclick=""> </div>  кнопка за допомогою джава + блок-->
+
+  <input type="submit">
+  <button onclick="">Button</button> <!--+ java для функціаналу-->
+
+</form>
+
+</body>
+</html>
