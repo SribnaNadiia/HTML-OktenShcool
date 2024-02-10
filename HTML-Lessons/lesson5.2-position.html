@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+
+    <style>
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: #2e2ec4;
+           /* position: static;*/       /*за замовчуванням статичне і додається поступово НЕДОСТУПНІ: top, bottom, right, left переміщення тільки по осям х та у*/
+
+            position: relative;       /*позіционуємо відносно місцезнаходження елементу*/
+            top: -30px;
+            left: 100px;
+            z-index: -1;  /*стандартно мають 0*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur corporis cum cumque deleniti deserunt earum ex fuga, harum nihil nobis quam quod sint soluta sunt veniam veritatis voluptate, voluptatibus? A ad adipisci aliquid architecto asperiores, beatae blanditiis culpa doloremque eaque eos est facere, fuga harum laudantium nesciunt nobis numquam, perspiciatis praesentium repellendus tempore unde vel veniam vero voluptatem voluptatum? Asperiores autem illum magni neque provident recusandae sapiente! Aliquam aliquid atque culpa delectus distinctio dolore ea eos ex excepturi, expedita, inventore pariatur praesentium quasi ratione repudiandae sequi sunt voluptatibus. Blanditiis laboriosam officiis possimus praesentium tempore! Consequuntur eaque molestiae nisi quisquam!</p>
+    <div class="box"></div>
+
+</body>
+</html>

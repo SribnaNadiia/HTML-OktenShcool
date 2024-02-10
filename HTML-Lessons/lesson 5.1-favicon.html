@@ -7,11 +7,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <style>
-
+       /* <!------------------Списки----------------------->*/
         ol li{
             list-style-type: armenian; /*можемо додати в якості нумерацвї букви інших мов   квадратики і тд*/
         }
-
+      /* <!----------------------------Вага селекторів---------------------------->*/
 
         /*
         tag - 1
@@ -36,9 +36,77 @@
     #red{                          /* 100*/
         color: red;
     }
+       /*<!------------------------------------Дочірні селектори----------------------------------->*/
 
+/*    .box>p{                    !* стилізуємо тільки дочірні прямі нащадки >*!
+        color: #cb0cbb;
+    }*/
+
+        .box>.container>p{             /* шлях до другого div*/
+            color: #2e2ec4;
+        }
+
+/*        .box p{
+            color: #441818;             !*просторовий селектор*!
+        }*/
+      /* <!------------------------------------Псевдо класси------------------------------------------->*/
+/*        ol>li:nth-child(odd){      !* стилізуємо тільки не парні елементи*!
+            color: #abab38;
+        }*/
+
+/*       ol>li:nth-child(odd){      !* стилізуємо тільки парні елементи*!
+           color: #3d3030;
+       }*/
+
+/*       ol>li:nth-child(3n){      !* стилізуємо конкретний елемент  кожен n  третій*!
+           color: #800909;
+       }*/
+
+/*       ol>li:nth-child(3n+6){      !* стилізуємо конкретний елемент  кожен n  третій починаючи з 6*!
+           color: #800909;
+       }*/
+
+       ol>li:nth-child(n+2){      /* стилізуємо всі окрім 1*/
+           color: #098064;
+       }
+
+       ol>li:first-child{
+           color: palegreen;       /*стилізуємо тільки перший */
+       }
+
+       ol>li:last-child{
+           color: #254925;       /*стилізуємо тільки останній */
+       }
+/*----------------------------------Псевдо елементи-----------------------------------*/
+
+/*       ol>li::first-letter{              !*стилізуємо тільки першу букву *!
+           color: #9B6F6F;
+           font-size: 20px;
+       }*/
+
+       p::first-line{                   /*стилізуємо тільки першу лінію*/
+           color: khaki;
+       }
+
+       ol>li::before{                  /* додаємо щось перед текстом*/
+           content: "----";
+           color: pink;
+       }
+
+       li{
+           list-style-type: none;       /*відключаємо нумерацію і через before можемо додати картинку*/
+       }
+
+
+       ol>li::after{                  /* додаємо щось після тексту*/
+           content: "!!!!!";
+           color: #050a41;
+           font-size: 30px;
+       }
 
     </style>
+
+
 
 
 </head>
@@ -77,21 +145,45 @@
 
 <!------------------------------------Дочірні селектори----------------------------------->
 
-    <div class="box">
+    <div class="box">                                           <!--1 прямий нащадок для body-->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>            <!--прямий нащадок для div1-->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
         <div class="container">
             <p>Lorem ipsum dolor sit amet.</p>
-            <p>Blanditiis ipsam iusto nihil quam?</p>
+            <p>Blanditiis ipsam iusto nihil quam?</p>               <!--дочірні елементи для контейнера-->
             <p>Accusantium laboriosam laborum numquam quia?</p>
             <p>Amet distinctio ex provident vero.</p>
             <p>Consectetur deserunt dicta quis temporibus.</p>
             <p>Itaque minima nihil quidem repellat?</p>
         </div>
     </div>
+<!------------------------------------Псевдо класси : ------------------------------------------->
+    <ol>
+        <li>Lorem ipsum dolor.</li>
+        <li>Doloremque repellendus, soluta.</li>
+        <li>Atque, illum, ipsam.</li>
+        <li>Corporis, ipsam, quisquam!</li>
+        <li>Explicabo, magni nisi.</li>
+        <li>Dolor, ducimus reiciendis.</li>
+        <li>Exercitationem repellat, vitae!</li>
+        <li>Laboriosam mollitia, quaerat.</li>
+        <li>Aspernatur laboriosam, rem.</li>
+        <li>Delectus, et, sint!</li>
+        <li>Iste minus, nemo.</li>
+        <li>Nisi qui, similique.</li>
+        <li>Quis, temporibus, ullam?</li>
+        <li>Dolore eveniet, inventore?</li>
+        <li>Maiores, neque, repudiandae!</li>
+    </ol>
+
+
+<!---------------------------Псевдо елементи :: --------------------------->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam asperiores, aspernatur autem consequatur consequuntur cumque dolorum eaque iste maxime molestiae porro, quasi qui quod totam! Alias, aliquid aut consectetur consequuntur dolor, doloremque, dolores eos facere fuga impedit inventore laboriosam porro qui rem sequi temporibus ullam voluptates. Aspernatur commodi, culpa ea earum eius eligendi error esse et explicabo harum illum in iure laboriosam maxime minus nam nesciunt non obcaecati placeat quaerat quibusdam quo rem repudiandae saepe similique, suscipit voluptas voluptate! Aperiam debitis dolorum nihil porro? Adipisci, alias aspernatur corporis distinctio eaque illo maiores perferendis provident quibusdam quo sint ullam voluptatem?</p>
+
+
 </body>
 </html>
