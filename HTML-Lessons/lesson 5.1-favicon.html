@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favicon</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <style>
+
+        ol li{
+            list-style-type: armenian; /*можемо додати в якості нумерацвї букви інших мов   квадратики і тд*/
+        }
+
+
+        /*
+        tag - 1
+        class - 10
+        id - 100
+        style - 1000
+        !important - 10000
+         */
+
+    p{
+        color: #2e2ec4 /*!important*/;         /* 1*/
+    }
+
+    div p{                      /* 2*/
+        color: #4cc705;
+    }
+
+    .yellowText{                /* 10*/
+        color: yellow;
+    }
+
+    #red{                          /* 100*/
+        color: red;
+    }
+
+
+    </style>
+
+
+</head>
+
+<body>
+<!------------------Списки----------------------->
+
+    <ol>     <!--нумирований список--> <!-- межі списку-->  <!--автоматична нумерація-->
+        <li>Lorem ipsum dolor sit amet</li>  <!--компоненти списку-->
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+    </ol>
+
+    <ul>     <!--марковані списки-->
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Aliquid debitis deleniti error magnam.</li>
+        <li>Debitis explicabo magni quasi voluptatem?</li>
+        <li>A dicta itaque rem totam?</li>
+        <li>Beatae illo, soluta. Aut, eligendi!        <!--вбудовуємо список в список-->
+                <ul style="list-style-type: square">
+                    <li >Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+        </li>
+    </ul>
+
+<!----------------------------Вага селекторів---------------------------->
+
+    <div>
+        <p class="yellowText" id="red" style="color: #cb0cbb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolores minus nulla odio perspiciatis quas, sint sit suscipit! Asperiores assumenda cumque deserunt distinctio harum, illum inventore ipsam magnam maiores minus nihil nulla odit officiis pariatur quas quis quisquam soluta sunt voluptatem voluptatum. Aliquam at autem commodi culpa delectus dignissimos dolorem excepturi facilis fuga in iste labore, laboriosam libero nesciunt pariatur placeat quo quos rem repellat, sed. Accusamus delectus, dolore, doloribus earum harum hic illum minus molestiae, nihil placeat quidem velit vero voluptatum. Ab accusamus autem consectetur cumque dolor eius explicabo labore mollitia natus omnis, quae qui recusandae sed unde ut.</p>
+    </div>
+
+<!------------------------------------Дочірні селектори----------------------------------->
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Blanditiis ipsam iusto nihil quam?</p>
+            <p>Accusantium laboriosam laborum numquam quia?</p>
+            <p>Amet distinctio ex provident vero.</p>
+            <p>Consectetur deserunt dicta quis temporibus.</p>
+            <p>Itaque minima nihil quidem repellat?</p>
+        </div>
+    </div>
+</body>
+</html>
