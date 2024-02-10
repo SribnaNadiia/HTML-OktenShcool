@@ -5,7 +5,7 @@
     <title>Position</title>
 
     <style>
-
+/*-------------------------статичне-----------------------*/
         .box{
             width: 200px;
             height: 200px;
@@ -15,15 +15,183 @@
             position: relative;       /*позіционуємо відносно місцезнаходження елементу*/
             top: -30px;
             left: 100px;
-            z-index: -1;  /*стандартно мають 0*/
+            z-index: -1;  /*стандартно мають 0, накладання елементів*/
         }
 
+        .pink{
+            width: 180px;
+            height: 180px;
+            background-color: #cb0cbb;
+        }
+   /* ----------------------------------абсолютне-------------------------------*/
+        .gold{
+            height: 200px;
+            width: 200px;
+            background-color: darkgoldenrod;        /*не буде слухатись потоку інших елементів*/
+            position: absolute;      /*орієнтується на найближчий елемент який має  позіционування відмінне від статі  або на body*/
+            top: 0;
+            right: 30px;
+            z-index: -2;
+
+        }
+
+       /* ---------------------фіксоване--------------------------*/
+        header{
+            width: 100%;
+            height: 5vh;
+            background-color: #441818;
+            position: fixed;                /*фіксується у місці створення */
+            top: 0;
+            left: 0;
+        }
+
+        footer{
+            width: 100%;
+            height: 5vh;
+            background-color: #b65555;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .boxes{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #29299b;
+            position: fixed;
+            right: 10px;
+            top: 500px;
+        }
+/*-----------------Клийке--------------- */
+
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid goldenrod;
+            overflow: auto; /*активує скрол в середині контейнеру */
+            font-size: 20px;
+        }
+
+        .clik{
+            background-color: #29299b;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;  /*зафіксувати позіцію*/     /* працює як фіксоване але в межах створення не опираючись на body*/
+            top: 0;
+        }
+
+        .content{
+
+        }
     </style>
 
 </head>
 <body>
+<!-------------------------статичне--------------------->
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur corporis cum cumque deleniti deserunt earum ex fuga, harum nihil nobis quam quod sint soluta sunt veniam veritatis voluptate, voluptatibus? A ad adipisci aliquid architecto asperiores, beatae blanditiis culpa doloremque eaque eos est facere, fuga harum laudantium nesciunt nobis numquam, perspiciatis praesentium repellendus tempore unde vel veniam vero voluptatem voluptatum? Asperiores autem illum magni neque provident recusandae sapiente! Aliquam aliquid atque culpa delectus distinctio dolore ea eos ex excepturi, expedita, inventore pariatur praesentium quasi ratione repudiandae sequi sunt voluptatibus. Blanditiis laboriosam officiis possimus praesentium tempore! Consequuntur eaque molestiae nisi quisquam!</p>
-    <div class="box"></div>
+    <div class="box">
+        <div class="pink"></div>
+    </div>
+
+<!-----------------------абсолютне-------------------------->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugiat!</p>
+    <p>Aliquam amet illum iste maxime modi nihil, non suscipit vero.</p>
+    <p>Eaque id ipsa ipsum nulla pariatur quisquam reiciendis, rerum ullam!</p>
+    <p>Ad adipisci consequatur impedit nostrum quia quibusdam repellendus sapiente voluptates.</p>
+    <p>Assumenda error exercitationem, facere hic itaque labore minima nulla odio!</p>
+    <div class="gold"></div>
+
+<!-------------------------фіксоване------------------------>
+<header> </header>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi dolore esse repellat suscipit tempore
+    voluptas voluptatum. Earum est iusto odit quisquam quos, similique unde voluptate. Dolore earum excepturi facilis
+    hic, maxime necessitatibus nemo, nostrum pariatur perferendis quaerat quia quibusdam reiciendis rerum? Accusamus,
+    adipisci amet assumenda culpa deserunt doloremque ea error est eveniet expedita explicabo facilis fugiat fugit illo
+    impedit in incidunt ipsa, iusto optio pariatur placeat praesentium qui, repellat rerum sunt voluptatibus voluptatum.
+    Accusamus, aliquid, consequatur dignissimos, earum et illum in laboriosam maiores molestias pariatur quaerat quos
+    reprehenderit suscipit! Aut ea iste laboriosam officia perferendis sed suscipit temporibus veniam!</p>
+<p>Aliquam aliquid, animi debitis earum inventore natus nemo non repellendus. Ad aperiam deleniti enim, est fugit ipsum
+    itaque labore mollitia necessitatibus quisquam quos repellat sapiente voluptatem. Mollitia sapiente veritatis
+    voluptates. Accusamus culpa eaque enim natus quidem! Consequuntur deserunt dignissimos harum iure nisi odit possimus
+    vel! Aperiam error explicabo laborum nihil nisi sint! Iste modi quisquam sapiente. Aut consequuntur distinctio ea
+    earum error excepturi illo nobis non, nostrum officia, omnis, quaerat sit suscipit? Aliquid animi aperiam blanditiis
+    consequuntur cumque cupiditate ducimus, enim eveniet, facere illo, illum impedit iure laudantium molestias odit
+    officia praesentium quaerat quisquam quo ratione reprehenderit sunt tempore? Quae!</p>
+<p>Aspernatur at beatae delectus dicta, dolore dolorem, dolorum eos eum exercitationem facere fugit in incidunt maxime
+    modi perspiciatis porro quaerat quo sit, sunt totam unde vel vero? Accusantium atque dolor eaque enim et inventore
+    ipsam labore magni modi, necessitatibus nihil nisi odit porro quam rem ut vitae. Aspernatur eaque nisi omnis quod
+    temporibus tenetur, voluptatibus? Architecto cum illo incidunt sit. Doloremque eaque inventore itaque nostrum
+    recusandae rerum, tenetur. Adipisci deserunt dolores, natus porro repellendus sit unde voluptate. Aut commodi
+    cupiditate dolor doloremque, dolores harum incidunt magni quaerat quibusdam quidem ratione repellendus sapiente.
+    Consequatur corporis doloribus inventore nihil quibusdam quos reprehenderit?</p>
+<p>Tenetur ut, velit? Dicta, expedita fugiat iste optio ratione reprehenderit repudiandae temporibus voluptas! Atque
+    deserunt ea eveniet fuga ipsa itaque maxime modi, nobis pariatur quaerat reiciendis voluptate. Alias aliquam
+    asperiores aspernatur blanditiis consequuntur corporis deserunt dolorem doloremque eaque est expedita fugit impedit
+    in iste iure molestiae nam neque nesciunt nisi numquam perspiciatis placeat porro praesentium quaerat quidem quod
+    ratione reprehenderit rerum sed ullam velit, veritatis vero voluptates? Cum cumque cupiditate deleniti dolore eius
+    eum excepturi exercitationem inventore labore, necessitatibus neque nostrum, obcaecati similique sunt tenetur vel
+    voluptates! Ad, asperiores at blanditiis explicabo inventore modi obcaecati pariatur quae quod repellat
+    sapiente.</p>
+<p>Architecto commodi cum ducimus ipsa odit? Aliquam laboriosam molestias quaerat ratione. Adipisci alias, amet
+    consequuntur est fuga non odio vel veniam! Deserunt dolorem doloremque dolores laboriosam nobis, nostrum, obcaecati
+    quae quam quidem quisquam quos recusandae, veniam. Alias assumenda, distinctio mollitia omnis placeat ratione!
+    Architecto eos fugit, nam nobis praesentium quaerat soluta voluptates? Animi assumenda at beatae ipsam natus nisi
+    officia quas quidem tempore velit. Dicta dolores est minima quo quos repellendus reprehenderit sunt veniam. Ab
+    cupiditate, facilis fuga necessitatibus nesciunt odio praesentium quae sint? Accusantium culpa cupiditate
+    dignissimos modi neque recusandae unde vel! Architecto est odit placeat praesentium, temporibus totam?</p>
+<p>Accusantium assumenda consequuntur cupiditate dolore inventore, iusto magnam modi perferendis placeat provident rem,
+    tenetur ullam. A accusantium adipisci aspernatur commodi culpa distinctio enim eos et ex facere fugiat ipsam itaque
+    iusto, neque nihil non obcaecati perferendis rem ullam unde veniam veritatis voluptatem. Adipisci aperiam assumenda
+    consequatur consequuntur, deserunt dolorum eaque ex excepturi expedita fuga fugit illo in ipsa itaque iure, laborum
+    maiores maxime modi molestias mollitia necessitatibus neque perspiciatis, porro quaerat quis quod quos recusandae
+    reiciendis reprehenderit saepe tempora velit veniam voluptatem. Ad aliquid commodi harum impedit in? Aperiam
+    deleniti et facilis fugit molestias mollitia nostrum quidem recusandae sequi. At.</p>
+<p>Ad aliquam aspernatur assumenda commodi cumque delectus ea facere fuga hic itaque iure mollitia natus necessitatibus
+    non nostrum obcaecati possimus quisquam saepe sed sequi tempore, veniam voluptatem. Alias animi architecto
+    consequatur culpa dicta dignissimos dolor dolorem ea eligendi enim, eos esse eveniet hic illo illum inventore itaque
+    libero magnam magni maiores maxime natus neque nisi optio pariatur placeat possimus quam quas quia quod recusandae
+    reiciendis rerum saepe sapiente sed totam veritatis! Accusamus dolore dolorum, eius laudantium numquam officiis
+    perferendis quas rem reprehenderit sunt. Deleniti expedita, explicabo in ipsam laboriosam possimus repellat
+    repudiandae? Consequatur consequuntur quam voluptatibus. Culpa id molestiae quidem.</p>
+<p>Accusamus accusantium ad aliquam autem blanditiis consectetur consequatur delectus deserunt dignissimos distinctio
+    earum enim esse facere fugit illum ipsa itaque libero maiores minima, minus nam nemo neque obcaecati odit omnis
+    perferendis provident quam quas qui quis quod repudiandae sapiente tempora unde ut veritatis vero? Aspernatur
+    distinctio, id iste nihil quo veritatis. Aliquam asperiores delectus eos eveniet in magni neque quaerat ratione
+    saepe sed vel, vero! Accusantium, alias amet architecto aspernatur, assumenda consequuntur deleniti deserunt
+    dignissimos dolor ea esse fugiat laboriosam optio porro praesentium quas repudiandae sapiente similique sit vel! Ab
+    amet dolor facilis fugit incidunt mollitia praesentium quo reiciendis suscipit?</p>
+<p>Doloremque ducimus laudantium unde! A aliquid aperiam at atque commodi, deleniti dolor dolore eaque eos ex facilis id
+    incidunt iusto laboriosam minima minus nam necessitatibus nemo nostrum officiis pariatur quaerat quibusdam
+    reprehenderit sed similique sint veritatis vero? Amet autem blanditiis consectetur corporis cupiditate doloremque
+    dolorum, eos ex exercitationem ipsam magni modi, nam nemo nesciunt nihil quam quas quo ratione recusandae
+    repellendus sed, voluptas voluptatem? A accusamus aliquam at autem consequuntur, cumque dolor, dolorem dolores
+    ducimus in ipsam nemo neque nobis nostrum obcaecati odio officia perspiciatis quam quia recusandae reiciendis rerum
+    soluta tempore ullam velit veniam voluptatibus? Ad atque unde voluptas?</p>
+<p>Consectetur dolores eum hic impedit, incidunt ipsa iure libero magnam maiores omnis optio quidem quod similique.
+    Assumenda autem beatae cupiditate dolor doloribus excepturi exercitationem expedita explicabo fugit iusto molestiae
+    nesciunt nihil nobis non numquam obcaecati pariatur perferendis, porro quae, quam, quidem quisquam reprehenderit
+    sapiente sint vel vero voluptas voluptate voluptatem voluptates voluptatum? Accusamus adipisci aliquam aspernatur
+    autem deserunt, distinctio dolores expedita fuga fugiat harum libero, nisi nostrum omnis placeat provident quas
+    repellat. Adipisci dignissimos distinctio facere ipsum itaque laboriosam magnam officia, placeat ratione
+    reprehenderit sed sequi, unde ut! Incidunt, odit, quas. Dolores, eligendi expedita illo ipsam iusto quasi rerum
+    voluptas?</p>
+<footer> </footer>
+<div class="boxes"></div>
+
+
+<!--------------------Клийке------------------>
+
+    <div class="container">
+        <div class="clik"> <p>Clik</p></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam asperiores at, atque consequuntur enim fuga labore omnis placeat provident quasi quod saepe temporibus totam veniam voluptate, voluptatum! Beatae eum ex, iste itaque maiores nulla quam reiciendis similique sunt velit. A dolorum eos labore quam repellat? Debitis doloremque eaque hic in incidunt perferendis quaerat recusandae rerum. Ab, aspernatur at atque consequuntur cupiditate dolore ducimus ea esse est iusto molestiae nesciunt nisi obcaecati optio quisquam recusandae saepe sit temporibus. Eligendi esse excepturi, necessitatibus quidem reprehenderit voluptatum! Accusamus accusantium, commodi, consectetur distinctio eligendi ipsa magni, molestiae nulla quaerat quam quas repellendus sit.</p>
+        </div>
+    </div>
 
 </body>
 </html>
