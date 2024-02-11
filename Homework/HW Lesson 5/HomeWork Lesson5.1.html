@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HomeWork</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 
     <style>
 
@@ -23,6 +26,20 @@
             font-size: 22px;
         }
 
+        .three>ol>li:nth-child(2n+4)::after{
+            content:"!";
+            font-size: 20px;
+            color: #ff0707;
+        }
+
+        .last>ul>li:last-child{
+            color: #be0fbe;
+        }
+
+        .first>ul>li::first-letter{
+            font-size: 30px;
+            color: darkred;
+        }
 
 
     </style>
@@ -65,7 +82,25 @@
         </ul>
     </div>
 
-    <div>
+    <div class="three">
+        <h2>General lists:</h2>
+        <ol>
+            <li>List of 18th-century British children's literature titles</li>
+            <li>List of 19th-century British children's literature titles</li>
+            <li>List of American children's books</li>
+            <li>List of Australian crime-related books and media</li>
+            <li>List of anonymously published works</li>
+            <li>List of autobiographies</li>
+            <li>Lists of banned books</li>
+            <li>List of books written by children or teenagers</li>
+            <li>List of book titles taken from literature</li>
+            <li>List of books by year of publication</li>
+            <li>List of children's books made into feature films</li>
+            <li>List of Christian novels</li>
+        </ol>
+    </div>
+
+    <div class="last">
         <h2>General lists:</h2>
         <ul>
             <li>List of 18th-century British children's literature titles</li>
@@ -83,25 +118,7 @@
         </ul>
     </div>
 
-    <div>
-        <h2>General lists:</h2>
-        <ul>
-            <li>List of 18th-century British children's literature titles</li>
-            <li>List of 19th-century British children's literature titles</li>
-            <li>List of American children's books</li>
-            <li>List of Australian crime-related books and media</li>
-            <li>List of anonymously published works</li>
-            <li>List of autobiographies</li>
-            <li>Lists of banned books</li>
-            <li>List of books written by children or teenagers</li>
-            <li>List of book titles taken from literature</li>
-            <li>List of books by year of publication</li>
-            <li>List of children's books made into feature films</li>
-            <li>List of Christian novels</li>
-        </ul>
-    </div>
-
-    <div>
+    <div class="first">
         <h2>General lists:</h2>
         <ul>
             <li>List of 18th-century British children's literature titles</li>
