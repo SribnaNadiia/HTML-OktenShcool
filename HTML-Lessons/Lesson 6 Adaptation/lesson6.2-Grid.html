@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*fr - елемент вимірювання грядів*/
+        .grid{
+            height: 100vh;
+            display: grid;     /* за замовчуванням ширина 100*/
+            /*grid-template-columns: 20vw 60vw 20vw; */ /*зазначаємо кількість та розмір ширину колонок*/
+            grid-template-columns: 1fr 3fr 1fr;   /*3/5 буде займати 3 частини з 5*/
+            /*grid-template-rows: 20vh 50vh 30vh;*/     /*зазначаємо кількість та розмір висоту колонок*/
+            grid-template-rows: repeat(3, 1fr);    /*3рази по одній фракції, сторінку розподілить на 3 рівні фракції відносно блоку*/
+            grid-gap: 2vh;                  /* внутрішні відступи */
+            }
+
+
+        div.grid>div{
+            background-color: #9B6F6F;
+            border: 1px solid #441818;
+            display: grid; /*flex*/
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid>div:nth-child(5){          /*стилізуємо конкретний елемент в сітці*/
+            background-color: #4E4949;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div><span>1</span></div>
+        <div><span>2</span></div>
+        <div><span>3</span></div>
+        <div><span>4</span></div>
+        <div><span>5</span></div>
+        <div><span>6</span></div>
+        <div><span>7</span></div>
+        <div><span>8</span></div>
+        <div><span>9</span></div>
+    </div>
+
+</body>
+</html>

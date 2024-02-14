@@ -1,0 +1,36 @@
+@media screen and (min-width: 300px) and (max-width: 500px){        /*(min-width: 300px) не обовьязково; */
+
+    body{
+        font-size: 12px;
+    }
+
+    header, footer{
+        height: 15vh;          /* прописуємо данні які будуть змінюватись, ширина не потрібна вона залишається 100 вьюпортів*/
+    }
+
+    p::after{
+        content: "mobile";
+    }
+
+    div{
+        flex-direction: column;
+    }
+
+    main{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    section{
+        width: 100vw;
+        height: 20vh;
+
+    }
+    article{
+        display: block;
+        width: 100vw;
+        height: 10vh;
+        background-color: #098064;
+    }
+
+}

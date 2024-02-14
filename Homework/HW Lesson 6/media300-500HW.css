@@ -1,0 +1,45 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+/*    html{
+        overflow-x: hidden;
+    }*/
+
+    body{
+        margin: 0;
+    }
+
+    header{
+        width: 100vw;
+        height: 15vh;
+    }
+
+    .main{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .big{
+        width: 100vw;
+        height: 30vh;
+        margin-top: 1vh;
+    }
+
+    .small{
+        height: 37vh;
+        width: 32vw;
+        margin: 0;
+    }
+
+    .section{
+        width: 100vw;
+        height: 70vh;
+        margin: 0;
+    }
+
+    .last{
+        width: 100vw;
+        height: 15vh;
+        margin: 0;
+    }
+
+}

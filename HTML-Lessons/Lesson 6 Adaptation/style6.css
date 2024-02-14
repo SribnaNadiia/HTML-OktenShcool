@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+header, footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: #4E4949;
+}
+
+div{
+    display: flex;
+}
+
+main{
+    width: 60vw;
+    height: 60vh;
+    background-color: #9B6F6F;
+}
+
+section{
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(175, 130, 112, 0.45);
+}
+
+article{
+    display: none;   /* буде прихований і з'явиться в мобільній версії*/
+}
+
+p{
+    margin: 0;
+}
+
+p::after{
+    content: "desktop";
+}
+
