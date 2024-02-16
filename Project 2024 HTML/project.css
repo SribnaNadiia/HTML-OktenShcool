@@ -3,9 +3,11 @@ body{
     background-color: #19191B;
 }
 
-section{
+.page-1{
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid #000;
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
 /*    padding-left: 8vw;
     padding-top: 4vh;*/
 }
@@ -16,9 +18,12 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 4vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+
 }
 
 
@@ -99,8 +104,10 @@ main{
     height: 90vh;
     display: flex;
     flex-direction: row;
-   /* justify-content: space-evenly;*/
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-left: 6vw;
+    padding-right: 6vw;
 
 }
 
@@ -111,7 +118,8 @@ main h2{
     font-style: normal;
     font-weight: 400;
     line-height:  /*105%*/ 84px;
-    margin-left: 8vw;
+    justify-content: flex-start;
+    /*margin-left: 4vw;*/
 }
 
 main span{
@@ -124,7 +132,8 @@ main span{
     font-weight: 400;
     line-height:  /*185.714% */39px;
     letter-spacing: -0.657px;
-    margin-left: 8vw;
+    justify-content: flex-start;
+   /* margin-left: 4vw;*/
 }
 
 .text{
@@ -134,16 +143,20 @@ main span{
 
 }
 
-#foto{
+.group{
     height: /*85%*/80vh;
-    width: 35%/*35vw*/;
-    background-image: url("Group 162549 1.png");
-    background-size: cover;
+    width:/*35%*/40vw;
 /*    width: 45vw;
     height: 80vh;
     background-position: center;
     background-image: url("Group 162549 1.png");
     background-size: cover;
     border-color: #8A8484;*/
+}
+
+.group img{
+    width: 40vw;
+    height: 80vh;
+    border: #8A8484 2px solid;
 }
 
