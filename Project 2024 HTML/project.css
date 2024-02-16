@@ -8,8 +8,6 @@ body{
     flex-wrap: wrap;
     border: 1px solid #000;
     background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
-/*    padding-left: 8vw;
-    padding-top: 4vh;*/
 }
 
 header{
@@ -104,10 +102,10 @@ main{
     height: 90vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 6vw;
-    padding-right: 6vw;
+    padding-right: 1vw;
 
 }
 
@@ -157,6 +155,65 @@ main span{
 .group img{
     width: 40vw;
     height: 80vh;
-    border: #8A8484 2px solid;
+   /* border: #8A8484 2px solid;*/
 }
 
+
+.page-2{
+    /*width: 100vw;*/
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    /*padding-left: 6vw;*/
+    justify-content: center;
+}
+
+.header{
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    justify-content: space-between;
+
+}
+
+.pagetwo{
+    height: 18vh;
+    width: 40vw;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 116.667% */
+    /*border: #8A8484 2px solid;*/
+}
+
+.content{
+    height: 12vh;
+    width: 40vw;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px; /* 185.714% */
+    letter-spacing: -0.657px;
+    /*border: #5454D4 2px solid;*/
+}
+
+.img4{
+    height: 80vh;
+    margin-top: 50px;
+
+}
+
+.img4 img{
+    width: 86vw;
+    height: 75vh;
+}
