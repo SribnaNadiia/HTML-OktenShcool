@@ -225,8 +225,14 @@ main span{
     flex-wrap: wrap;
     border: 1px solid #000;
     background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
-    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+}
+
+.top{
+    height: 18vh;
+    margin-top: 4vh;
 }
 
 .content-3{
@@ -241,3 +247,92 @@ main span{
     /*border: #8A8484 2px solid;*/
     text-align: center;
 }
+
+.in-content{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 30vh;
+    /*border: #8A8484 solid 2px;*/
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.main-one{
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.img-blue{
+    width: 65px;
+    height: 65px;
+    background-image: url("blue.png");
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-red{
+    width: 65px;
+    height: 65px;
+    background-image: url("red.svg");
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-yellow{
+    width: 65px;
+    height: 65px;
+    background-image: url("yellow.svg");
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hover{
+    transition: 1s;
+}
+
+.hover:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+
+.typography-3{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.in-content p{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.5px;
+}
+
