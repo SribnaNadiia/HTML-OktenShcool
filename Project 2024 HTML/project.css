@@ -4,6 +4,7 @@ body{
 }
 
 .page-1{
+    height: 95vh;
     display: flex;
     flex-wrap: wrap;
    /* border: 1px solid #000;*/
@@ -56,7 +57,7 @@ a:hover{
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     /*margin-right: 19vw;*/
 }
 
@@ -104,8 +105,8 @@ button:hover{
     background-color: #09099f;
     border-color: #09099f;
     /*margin-bottom: 10vh;*/
-    margin-top: -7vh;
-
+   /* margin-top: 1vh;*/
+    margin-bottom: 5vh;
 }
 
 main{
@@ -129,7 +130,7 @@ main h2{
     line-height:  /*105%*/ 84px;
     justify-content: flex-start;
     /*margin-left: 4vw;*/
-    margin: 9vh 0;
+    margin: 9vh 0 3vh 0;
 }
 
 main span{
@@ -143,15 +144,16 @@ main span{
     line-height:  /*185.714% */39px;
     letter-spacing: -0.657px;
     justify-content: flex-start;
-   /* margin-left: 4vw;*/
+    margin-bottom: 4vh;
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 40vw;
-    height: 48vh;
+    height: 85vh;
     margin-right: 5vw;
-
-
 }
 
 .group{
@@ -181,6 +183,7 @@ main span{
     background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
     /*padding-left: 6vw;*/
     justify-content: center;
+    padding-top: 1vh;
 }
 
 .header{
@@ -221,13 +224,13 @@ main span{
     /*border: #5454D4 2px solid;*/
 }
 
-.img4{
+.img2{
     height: 80vh;
     margin-top: 50px;
 
 }
 
-.img4 img{
+.img2 img{
     width: 86vw;
     height: 70vh;
 }
@@ -380,7 +383,7 @@ main span{
     margin-left: 6vw;
 }
 
-.header4{
+.header-4{
     width: 100vw;
     height: 20vh;
     display: flex;
@@ -390,7 +393,7 @@ main span{
     margin-top: 4vh;
 }
 
-.main4{
+.main-4{
     height: 80vh;
     width: 100vw;
     display: flex;
@@ -425,12 +428,12 @@ main span{
     flex-direction: row;
 }
 
-.main5{
+.main-5{
     height: 20vh;
     width: 60vw;
 }
 
-.main5 span{
+.main-5 span{
     color: #FFF;
     font-family: Lato, sans-serif;
     font-size: 60px;
@@ -462,7 +465,7 @@ main span{
     color: rgba(255, 255, 255, 0.70);
     text-align: right;
     font-family: Lato, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 38px; /* 237.5% */
