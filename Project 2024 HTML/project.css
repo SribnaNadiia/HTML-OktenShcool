@@ -157,7 +157,7 @@ main span{
 }
 
 .group{
-    height: /*85%*/80vh;
+    height: /*85%*/75vh;
     width:/*35%*/40vw;
 /*    width: 45vw;
     height: 80vh;
@@ -169,7 +169,7 @@ main span{
 
 .group img{
     width: 40vw;
-    height: 80vh;
+    height: 75vh;
    /* border: #8A8484 2px solid;*/
 }
 
