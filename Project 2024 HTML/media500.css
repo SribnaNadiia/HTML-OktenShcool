@@ -29,7 +29,8 @@
         width: 85vw;
         height: 100vh;
         margin-bottom: 10vh;
-        margin-right: 3vh;
+        /*margin-right: 3vh;*/
+        margin-left: -1vw;
     }
 
     .text > div > h2 {
@@ -83,7 +84,7 @@
     }
 
     .header > .content-2 {
-        width: 90vw;
+        width: 70vw;
         height: 20vh;
         color: #FFF;
         font-family: Lato, sans-serif;
