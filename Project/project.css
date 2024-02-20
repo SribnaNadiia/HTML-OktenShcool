@@ -109,15 +109,6 @@ button:hover{
     margin-bottom: 5vh;
 }
 
-.bt-screen{
-    display: none;
-    width: 40vw;
-    height: 9vh;
-    background-color: #09099f;
-    border-color: #09099f;
-    margin-bottom: 5vh;
-}
-
 main{
     width: 100vw;
     height: 90vh;
@@ -411,10 +402,6 @@ main span{
     align-items: center;
 }
 
-.main4-mb{
-    display: none;
-}
-
 .mount{
     width: 25vw /*384px*/;
     height: 32vh/*301px*/;
@@ -483,8 +470,4 @@ main span{
     font-weight: 400;
     line-height: 38px; /* 237.5% */
     letter-spacing: -0.5px;
-}
-
-.mb-info{
-    display: none;
 }

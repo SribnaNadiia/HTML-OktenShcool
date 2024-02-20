@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) and (max-height: 700px) {
+@media screen and (min-width: 300px) and (max-width: 500px) and (max-height: 700px) {
 
     .page-1 {
         height: 150vh;
@@ -22,18 +22,19 @@
         flex-wrap: nowrap;
         flex-direction: column;
         margin-top: -250px;
+        align-items: center;
     }
 
     main > .text {
         width: 85vw;
         height: 100vh;
         margin-bottom: 10vh;
-        margin-right: 0;
+        margin-right: 3vh;
     }
 
     .text > div > h2 {
         color: #FFF;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 42px;
         font-style: normal;
         font-weight: 400;
@@ -42,7 +43,7 @@
 
     .text > div > span {
         color: rgba(255, 255, 255, 0.70);
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -57,9 +58,9 @@
         margin-bottom: 0;
     }
 
-    .group {
-        /*width: 80vw;*/
-        height: 50vh;
+    main>.group{
+        display: flex;
+        justify-content: center;
     }
 
     .group > img {
@@ -85,7 +86,7 @@
         width: 90vw;
         height: 20vh;
         color: #FFF;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
@@ -97,7 +98,7 @@
         height: 10vh;
         margin-top: 4vh;
         color: rgba(255, 255, 255, 0.70);
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -120,27 +121,26 @@
     }
 
     .page-3 {
-        height: 255vh;
+        height: 270vh;
     }
 
     .top > .content-3 {
         width: 85vw;
         height: 20vh;
         color: #FFF;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
         text-align: start;
-        padding-left: 6vw;
     }
 
 
     .main-one {
         margin: 0;
         width: 95vw;
-        height: 110vh;
+        height: 120vh;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -150,7 +150,7 @@
     .main-two {
         margin: 0;
         width: 95vw;
-        height: 110vh;
+        height: 120vh;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -169,7 +169,7 @@
 
     .header-4 > span {
         color: #FFF;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
@@ -219,7 +219,7 @@
 
     .main-5>span{
         color: #FFF;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
@@ -255,7 +255,7 @@
         margin: 0 2vh 0 2vh;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.70);
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -269,6 +269,7 @@
 
     .info{
         margin-bottom: 7vh;
+        font-size: 16px;
     }
 
     .footer>.logoone{

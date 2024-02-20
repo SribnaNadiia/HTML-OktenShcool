@@ -109,6 +109,15 @@ button:hover{
     margin-bottom: 5vh;
 }
 
+.bt-screen{
+    display: none;
+    width: 40vw;
+    height: 9vh;
+    background-color: #09099f;
+    border-color: #09099f;
+    margin-bottom: 5vh;
+}
+
 main{
     width: 100vw;
     height: 90vh;
@@ -251,8 +260,7 @@ main span{
     display: flex;
     flex-wrap: wrap;
     height: 20vh;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 6vh;
 }
 
 .content-3{
@@ -280,7 +288,6 @@ main span{
 }
 
 .main-one{
-    margin-top: 20px;
     height: 40vh;
     display: flex;
     flex-wrap: wrap;
@@ -350,6 +357,7 @@ main span{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: 1vh;
 }
 
 .in-content p{
@@ -394,7 +402,7 @@ main span{
 }
 
 .main-4{
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     flex-wrap: nowrap;
@@ -402,9 +410,13 @@ main span{
     align-items: center;
 }
 
+.main4-mb{
+    display: none;
+}
+
 .mount{
-    width: 25vw /*384px*/;
-    height: 32vh/*301px*/;
+    width: 26vw /*384px*/;
+    height: 30vh/*301px*/;
     border-radius: 14px;
     background: #1E1E20;
     margin: 40px;
@@ -415,7 +427,7 @@ main span{
 
 .mount img{
     width: 23vw;
-    height: 28vh;
+    height: 25vh;
 }
 
 .page-5{
@@ -470,4 +482,8 @@ main span{
     font-weight: 400;
     line-height: 38px; /* 237.5% */
     letter-spacing: -0.5px;
+}
+
+.mb-info{
+    display: none;
 }
